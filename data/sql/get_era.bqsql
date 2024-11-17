@@ -1,0 +1,4 @@
+SELECT
+   FARM_FINGERPRINT(CONCAT(idx_hep, {{ salt }}))
+   * EXCEPT(idx_hep)    
+FROM `ries-workflows.ries_20240821_fors.heps_gui_table`
